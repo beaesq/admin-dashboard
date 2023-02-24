@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: clamp(150px, 20%, 250px) 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.sidebar {
+  background-color: darkslateblue;
+  color: white;
+
+  grid-row: span 2;
+
+}
+
+.header {
+  
+}
+
+.header-top {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.header-bottom {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.main {
+  background-color: lavender;
+
+  display: grid;
+}

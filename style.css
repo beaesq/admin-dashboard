@@ -72,7 +72,43 @@
 .header-bottom {
   display: grid;
   grid-auto-flow: column;
+  align-items: center;
+  font-weight: bold;
+  grid-template-columns: auto 1fr auto auto auto;
+  gap: 25px;
+  margin: 10px 20px;
 }
+
+.header-bottom .greeting {
+  display: grid;
+  gap: 5px;
+}
+
+.header-bottom .greeting .message {
+  font-size: 14px;
+}
+
+.header-bottom .greeting .name {
+  font-size: 20px;
+}
+
+.header-bottom button {
+  color: white;
+  font-weight: bold;
+  background-color: #F98F81;
+  height: 35px;
+  width: 85px;
+  border-radius: 20px;
+  border: none;
+}
+
+.header-bottom button:hover {
+  background-color: #e67465;
+} 
+
+.header-bottom button:active {
+  background-color: #F98F81;
+} 
 
 .search {
   display: grid;

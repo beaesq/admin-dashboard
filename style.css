@@ -2,6 +2,10 @@
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
+p {
+  margin: 0px;
+}
+
 .container {
   display: grid;
   grid-template-columns: clamp(150px, 20%, 250px) 1fr;
@@ -212,8 +216,48 @@ input.search-bar {
   grid-column: 2 / 3;
 }
 
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .announcements {
   display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+}
+
+.announcements-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.1);
+  padding: 20px;
+  
+}
+
+.announcements-container .bg {
+  display: grid;
+
+  background-color: #610f05;
+  gap: 1px;
+}
+
+.announcements-item {
+  background-color: white;
+  padding: 10px;
+
+  display: grid;
+  gap: 10px;
+}
+
+.announcements-item .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.announcements-item .content {
+  font-size: 14px;
+  color: rgb(70, 70, 70);
 }
 
 .trending {

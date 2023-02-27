@@ -1,3 +1,7 @@
+:root {
+  --grey-font: rgb(90, 90, 90);
+}
+
 * {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
@@ -232,7 +236,6 @@ input.search-bar {
   border-radius: 8px;
   box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.1);
   padding: 20px;
-  
 }
 
 .announcements-container .bg {
@@ -256,22 +259,44 @@ input.search-bar {
 }
 
 .announcements-item .content {
-  font-size: 14px;
-  color: rgb(70, 70, 70);
+  font-size: 13px;
+  color: var(--grey-font);
 }
 
 .trending {
   display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+}
+
+.trending-container {
+  display: grid;
+
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.1);
+  padding: 20px;
 }
 
 .trending-item {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
 }
 
-.trending-item img.user-icon {
-  grid-row: span 2;
+.trending-item div {
+  display: grid;
+  gap: 5px;
+}
+
+.trending-item .username {
+  font-size: 14px;
+}
+
+.trending-item .title {
+  font-size: 14px;
+  color: var(--grey-font);
 }
 
 img.user-icon {
